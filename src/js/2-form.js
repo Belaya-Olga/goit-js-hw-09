@@ -16,8 +16,11 @@ function handleFormSubm(event) {
 }
 
 
+console.log(formData);
     localStorage.removeItem(storageKey);
     event.target.reset();
+     formData.email = "";
+  formData.message = "";
 }
 
 
