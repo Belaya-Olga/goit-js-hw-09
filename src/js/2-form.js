@@ -13,14 +13,17 @@ function handleFormSubm(event) {
     if (email.value.trim() === "" || message.value.trim() === "") {
         alert("Fill please all fields");
         return;
+
 }
 
 
-console.log(formData);
+    console.log(formData);
+    
     localStorage.removeItem(storageKey);
     event.target.reset();
-     formData.email = "";
-  formData.message = "";
+
+      formData.email = "";
+      formData.message = "";
 }
 
 
